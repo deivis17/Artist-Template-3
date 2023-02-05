@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* COLORS */
+/* Primary Colors */
+/* Secundary Colors */
+/* Brands Colors */
+/* SOCIAL COLORS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+ul {
+  list-style: none;
+}
+
+/* GRADIENT */
+/* HEADER */
+.header .navbar {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(255, 204, 0);
+  padding-top: 0;
+}
+.header .navbar .logo-brand {
+  border-radius: 100%;
+  grid-column: 2/4;
+  width: 2.3rem;
+  align-self: center;
+  margin: 0;
+}
+.header .navbar .navmenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 4/6;
+}
+.header .navbar .navmenu li {
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+.header .navbar .navmenu li:hover {
+  text-decoration: underline;
+}
+.header .navbar .bars, .header .navbar .shopping {
+  align-self: center;
+}
+.header .navbar .bars {
+  grid-column: 7/8;
+  display: none;
+}
+.header .navbar .shopping {
+  grid-column: 8/8;
+  font-size: 1.3rem;
+}
+
+/* HEADER END */
+/* ARTIST SECTION */
+.artist {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.7)), url("https://picsum.photos/1000/600") no-repeat center center/cover;
+  width: 100%;
+  height: 25rem;
+}
+.artist .content {
+  grid-column: 5/8;
+  grid-row: 3/6;
+}
+.artist .content h1, .artist .content p, .artist .content h2 {
+  margin-bottom: 0.5rem;
+  color: white;
+}
+.artist .content h2 {
+  color: rgb(255, 204, 0);
+}
+
+/* ARTIST SECTION ENDED */
+.btn {
+  width: 8rem;
+  background: rgb(255, 204, 0);
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 0.5rem;
+  box-shadow: 0 0 6px;
+}
+.btn:hover {
+  background-color: rgba(182, 173, 10, 0.847);
+}
+
+/* GALLERY SLIDESHOW */
+.gallery .content {
+  width: 50%;
+}
+
+/* GALLERY SLIDESHOW */
+/* RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .navmenu {
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(255, 204, 0);
+    height: 75vh;
+    margin-top: 24rem;
+    transform: translateX(50rem);
+    text-align: center;
+    padding-top: 1rem;
+    display: none;
+  }
+  .navmenu li {
+    padding-bottom: 0.3rem;
+  }
+  .bars {
+    display: block !important;
+    font-size: 1.4rem;
+    grid-column: 8/8;
+    margin-left: 12rem;
+    cursor: pointer;
+  }
+  .shopping {
+    display: none;
+  }
+  .show {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
+  }
+}
+@media screen and (max-width: 400px) {
+  .artist {
+    display: block;
+    width: 100%;
+  }
+  .artist .content {
+    padding: 5rem 3.2rem;
+    width: 90%;
+  }
+  .artist .content p {
+    font-size: 0.8rem;
+  }
+  .navmenu {
+    position: absolute;
+    left: 16.9rem;
+    display: none;
+  }
+  .show {
+    transform: translateX(-8.95rem);
+    transition: transform 0.5s ease-in;
+  }
+}
+/* RESPONSIVE END *//*# sourceMappingURL=main.css.map */
